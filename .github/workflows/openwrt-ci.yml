@@ -98,8 +98,10 @@ jobs:
 
           # 编译x64固件:
           # cat >> .config <<EOF
-          # CONFIG_TARGET_x86=y
-          # CONFIG_TARGET_x86_64=y
+          CONFIG_TARGET_bcm53xx=y
+          CONFIG_TARGET_bcm53xx_DEVICE_asus-rt-ac68u=y
+          CONFIG_TARGET_BOARD="bcm53xx"
+          CONFIG_TARGET_PROFILE="DEVICE_asus-rt-ac68u"
           # CONFIG_TARGET_x86_64_Generic=y
           # EOF
 
